@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      BB77
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="home-background-pic" src="home.jpg">
+  </div>
+  <section id="cd-timeline" class="cd-container">
+    <div *ngFor="let feed of feeds">
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-icon assertive">
+          {{feed.author}}
+        </div>
+        <div class="cd-timeline-content assertive">
+          {{feed.desc}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+</ion-content>
