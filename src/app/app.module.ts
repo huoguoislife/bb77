@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { CreatePage } from '../pages/create/create';
-import { MePage } from '../pages/me/me';
+import { MePage } from '../pages/myPage/me';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 

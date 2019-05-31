@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, Tabs } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import { CreatePage } from '../create/create';
-import { MePage } from '../me/me';
+import { MePage } from '../myPage/me';
 import { HomePage } from '../home/home';
 
 
