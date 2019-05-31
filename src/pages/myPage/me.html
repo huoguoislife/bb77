@@ -1,35 +1,44 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>
-      Me
-    </ion-title>
-
-  </ion-navbar>
+  <ion-title>
+    Me
+  </ion-title>
 </ion-header>
 
 <ion-content padding>
 
-  <section>
-    <div>
-      name:BB
-    </div>
+  <section class="me">
+    <ion-col col-3>
+      <div>
+        name:BB
+      </div>
+    </ion-col>
+    <ion-col col-9>
+      <div>
+        <img src="assets/imgs/bb.JPG" class="my_profile_photo" />
+      </div>
+    </ion-col>
     <br>
-    <div>
-      <img src="assets/imgs/bb.JPG" class="my_profile_photo" />
-    </div>
-    <br>
+  </section>
 
-  </section>
-  <section>
-    <div *ngFor="let feed of feeds">
-      friend List
+  <section class="myfriends">
+    <!--  <div *ngFor="let friend of friends">-->
+    <div>
+      <ion-col col-3>
+        <div>
+          name:BB
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div>
+          <img src="assets/imgs/bb.JPG" class="my_profile_photo" />
+        </div>
+      </ion-col>
     </div>
   </section>
-  <br><br><br>
+
   <button ion-button icon-only>
     <ion-icon name="home">Signout</ion-icon>
   </button>
+
   <ion-item class="more-logout" *ngIf="loggedIn" (click)="logout()">LOGOUT</ion-item>
-
-
 </ion-content>
