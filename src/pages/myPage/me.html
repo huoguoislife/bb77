@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Me
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <section>
+    <div>
+      name:BB
+    </div>
+    <br>
+    <div>
+      <img src="assets/imgs/bb.JPG" class="point_board" />
+    </div>
+    <br>
+
+  </section>
+  <section>
+    <div *ngFor="let feed of feeds">
+      friend List
+    </div>
+  </section>
+  <br><br><br>
+  <button ion-button icon-only>
+    <ion-icon name="home">Signout</ion-icon>
+  </button>
+  <ion-item class="more-logout" *ngIf="loggedIn" (click)="logout()">{{'LOGOUT' | translate}}</ion-item>
+
+
+</ion-content>
