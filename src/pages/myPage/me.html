@@ -6,39 +6,32 @@
 
 <ion-content padding>
 
-  <section class="me">
-    <ion-col col-3>
-      <div>
+  <ion-card>
+    <section class="me">
+      <div class="myName">
         name:BB
       </div>
-    </ion-col>
-    <ion-col col-9>
+      <img src="assets/imgs/bb.JPG" class="my_profile_photo" />
+    </section>
+  </ion-card>
+  <ion-card>
+    <section class="myfriends">
+      <!--  <div *ngFor="let friend of friends">-->
       <div>
-        <img src="assets/imgs/bb.JPG" class="my_profile_photo" />
+        <div class="friendName">
+          name:77
+        </div>
+        <img src="assets/imgs/bb.JPG" class="friend_profile_photo" />
       </div>
-    </ion-col>
-    <br>
-  </section>
+      <div>
+        name:alex
+        <img src="assets/imgs/bb.JPG" class="friend_profile_photo" />
+      </div>
+    </section>
+  </ion-card>
 
-  <section class="myfriends">
-    <!--  <div *ngFor="let friend of friends">-->
-    <div>
-      <ion-col col-3>
-        <div>
-          name:BB
-        </div>
-      </ion-col>
-      <ion-col col-3>
-        <div>
-          <img src="assets/imgs/bb.JPG" class="my_profile_photo" />
-        </div>
-      </ion-col>
-    </div>
-  </section>
-
-  <button ion-button icon-only>
-    <ion-icon name="home">Signout</ion-icon>
+  <button ion-button>
+    <ion-icon name="home" (click)="logout()">Signout</ion-icon>
   </button>
 
-  <ion-item class="more-logout" *ngIf="loggedIn" (click)="logout()">LOGOUT</ion-item>
 </ion-content>

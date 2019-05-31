@@ -5,50 +5,44 @@ page-me {
 
   /* --------------------------------
 
-Paddings and margins
-
--------------------------------- */
-  .marginBottom0 {
-    margin-bottom: 0;
-  }
-  .marginTop0 {
-    margin-top: 0;
-  }
-  .marginTop5 {
-    margin-top: 5px !important;
-  }
-  /* --------------------------------
-
   Modules - reusable parts of our design
 
   -------------------------------- */
 
   .my_profile_photo{
-      height:35%;
-      width:35%;
-      position: absolute;
+      height:30%;
+      width:30%;
       top: 0;
       left: 0;
-      border-radius: 80%;
+      border-radius: 20%;
       border-color: #4a87ee;
       border-style: solid;
       border-width: 2px;
-      padding-top:5px;
-      background: white;
+      margin-left: 60%;
+  }
+  
+  .friend_profile_photo{
+    height:25%;
+    width:25%;
+    border-radius: 20%;
+    border-color: #4a87ee;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 70%;
+}
+
+  .myName{
+    font-size: 60px;
+  }
+
+  .friendName{
+    font-size: 50px;
   }
 
   @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
       font-size: 20px;
       font-size: 1.25rem;
-    }
-    .cd-timeline-content p {
-      font-size: 16px;
-      font-size: 1rem;
-    }
-    .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-      font-size: 14px;
-      font-size: 0.875rem;
     }
   }
 }
