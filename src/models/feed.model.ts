@@ -8,8 +8,9 @@ export class Feed {
     singleImgUrl: string;
     playButton: boolean;
     createdDateTime: any;
+    author: string;
 
-    constructor(id, type, desc, imgUrl, singleImgUrl, createdDateTime, link) {
+    constructor(id, type, desc, imgUrl, singleImgUrl, createdDateTime, link, author) {
         this.id = id;
         this.type = type;
         this.textStory = desc;
@@ -17,5 +18,6 @@ export class Feed {
         this.singleImgUrl = singleImgUrl
         this.createdDateTime = createdDateTime;
         this.link = link;
+        this.author = author;
     }
 }

@@ -29,7 +29,7 @@ export class HomePage {
     this.feeds = [{
       createdAt: new Date(),
       author: "bb",
-      profilePicture: "perry.png",
+      profilePicture: "assets/imgs/bb.JPG" class= "my_profile_photo" />,
       desc: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet. 我就试试看是什么感觉",
       type: "location",
       privateOrNot: false
@@ -51,7 +51,7 @@ export class HomePage {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "adam.jpg",
-      desc: "Lorem ipsum dolor好累啊这几天都睡眠不足。想赶快定下来，拿钱，轻松，买衣服，多睡觉。 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      desc: "Lorem ipsum dolor好累啊这几天都睡眠不足。 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "picture",
       privateOrNot: false
 
