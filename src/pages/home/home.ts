@@ -29,7 +29,7 @@ export class HomePage {
     this.feeds = [{
       createdAt: new Date(),
       author: "bb",
-      profilePicture: "assets/imgs/bb.JPG" class= "my_profile_photo" />,
+      profilePicture: "assets/imgs/bb.JPG",
       desc: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet. 我就试试看是什么感觉",
       type: "location",
       privateOrNot: false
