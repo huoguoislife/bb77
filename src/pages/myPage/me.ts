@@ -20,50 +20,34 @@ export class MePage {
 
   formFeed() {
     this.feeds = [{
-      createdAt: new Date(),
-      author: "bb",
-      profilePicture: "perry.png",
-      textStory: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet",
-      type: "location",
-      privateOrNot: false
-    }, {
-      createdAt: new Date(),
       author: "77",
-      profilePicture: "mike.png",
-      textStory: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      type: "text",
-      privateOrNot: false
-    }, {
-      createdAt: new Date(),
-      author: "77",
+      createdDateTime: 1478708162000,
+      id: "qqqqqqqqq",
       profilePicture: "max.png",
-      textStory: "Lorem ipsum dolor sit amet.sdfghjkllhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      textStory: "Lorem ipsum dolor sit amet.sdfghjkl飞机上好干啊！汉字能多占几个字符啊。lhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
       type: "video",
+      singleImgUrl: "none",
       privateOrNot: false
     }, {
-      createdAt: new Date(),
       author: "bb",
+      createdDateTime: 1478708162000,
+      id: "qqqqqqqqq",
       profilePicture: "adam.jpg",
-      textStory: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor好累啊这几天都睡眠不足。 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "picture",
+      singleImgUrl: "none",
       privateOrNot: false
 
     }, {
-      createdAt: new Date(),
       author: "77",
+      createdDateTime: 1478708162000,
+      id: "qqqqqqqqq",
       profilePicture: "max.png",
-      textStory: "Lorem ipsum dolor sit amet.sdfghjkllhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      textStory: "Lorem ipsum dolor sit amet.sdfghjkll开发本身可能没有那么难，就是想主意设计比较难hgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      singleImgUrl: "none",
       type: "video",
       privateOrNot: false
-    }, {
-      createdAt: new Date(),
-      author: "bb",
-      profilePicture: "adam.jpg",
-      textStory: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      type: "picture",
-      privateOrNot: false
-
-    }]
+    },]
   }
 
 

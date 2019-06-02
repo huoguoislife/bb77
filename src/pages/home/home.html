@@ -23,11 +23,12 @@
         <!--Right side-->
         <div class="cd-timeline-content assertive">
           {{feed.textStory}}
+          <div class="passed-time">
+            {{getPassedTime(feed.createdDateTime)}} ago
+          </div>
         </div>
         <!--Where??-->
-        <div class="passed-time">
-          {{getPassedTime(feed.createdDateTime)}}
-        </div>
+
       </div>
     </div>
     <!--Infinite-->
