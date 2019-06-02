@@ -2,17 +2,17 @@ export class Feed {
 
   author: string;
   type: string;
-  desc: string;
+  textStory: string;
   //imgUrl: string;
   createdAt: Date;
   profilePicture: string;
   privateOrNot: boolean;
 
-  constructor(createdAt, author, profilePicture, desc, type, privateOrNot) {
+  constructor(createdAt, author, profilePicture, textStory, type, privateOrNot) {
 
     this.author = author;
     this.type = type;
-    this.desc = desc;
+    this.textStory =  textStory;
     //this.imgUrl = imgUrl;
     this.createdAt = createdAt;
     this.profilePicture = profilePicture;

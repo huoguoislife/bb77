@@ -7,22 +7,40 @@
 </ion-header>
 
 <ion-content>
+  <!--On the top-->
   <section class="home-background-pic">
     <img src="assets/imgs/paris.jpeg" width=100% />
   </section>
-
+  <!--Per feed-->
   <section id="cd-timeline" class="cd-container">
-    <div *ngFor="let feed of feeds">
+    <div *ngFor="let feed of feeds" (tap)="feedSelected($event, myFeed)">
       <div class="cd-timeline-block">
+        <!--Left side-->
         <div class="cd-timeline-icon assertive">
           {{feed.author}}
           {{feed.profilePicture}}
         </div>
+        <!--Right side-->
         <div class="cd-timeline-content assertive">
-          {{feed.desc}}
+          {{feed.textStory}}
+        </div>
+        <!--Where??-->
+        <div class="passed-time">
+          {{getPassedTime(feed.createdDateTime)}}
         </div>
       </div>
     </div>
+    <!--Infinite-->
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content loadingSpinner="circles"></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </section>
+
+  <!--When it is loading-->
+  <my-spinner [isLoading]="isLoading">
+  </my-spinner>
+  <!--When there is errors-->
+  <unable-to-obtain-info *ngIf="isError">
+  </unable-to-obtain-info>
 
 </ion-content>

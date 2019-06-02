@@ -30,28 +30,28 @@ export class HomePage {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "assets/imgs/bb.JPG",
-      desc: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet. 我就试试看是什么感觉",
+      textStory: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet. 我就试试看是什么感觉",
       type: "location",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "77",
       profilePicture: "mike.png",
-      desc: "Lorem ipsum dolor sit amet, 多写一点。换行换行consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor sit amet, 多写一点。换行换行consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "text",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "77",
       profilePicture: "max.png",
-      desc: "Lorem ipsum dolor sit amet.sdfghjkl飞机上好干啊！汉字能多占几个字符啊。lhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      textStory: "Lorem ipsum dolor sit amet.sdfghjkl飞机上好干啊！汉字能多占几个字符啊。lhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
       type: "video",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "adam.jpg",
-      desc: "Lorem ipsum dolor好累啊这几天都睡眠不足。 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor好累啊这几天都睡眠不足。 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "picture",
       privateOrNot: false
 
@@ -59,18 +59,38 @@ export class HomePage {
       createdAt: new Date(),
       author: "77",
       profilePicture: "max.png",
-      desc: "Lorem ipsum dolor sit amet.sdfghjkll开发本身可能没有那么难，就是想主意设计比较难hgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      textStory: "Lorem ipsum dolor sit amet.sdfghjkll开发本身可能没有那么难，就是想主意设计比较难hgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
       type: "video",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "adam.jpg",
-      desc: "Lorem ipsum dolor sit amet最后一个了 今天第一次买了兰蔻以外的粉底，传说中的油皮必备。期待期待, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor sit amet最后一个了 今天第一次买了兰蔻以外的粉底，传说中的油皮必备。期待期待, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "picture",
       privateOrNot: false
 
     }]
+  }
+
+  /**
+* calculate the passed time since the created time.
+*/
+  getPassedTime(time) {
+    let now = new Date();
+    let postTime = new Date(Date.parse(time));
+    let secs = (now.getTime() - postTime.getTime()) / 1000;
+    let min = Math.floor(secs / 60);
+    let hours = Math.floor(min / 60);
+    if (hours > 23) {
+      return Math.floor(hours / 24) + "d";
+    } else {
+      if (hours != 0) {
+        return hours + "h";
+      } else {
+        return min + "m";
+      }
+    }
   }
 }
 

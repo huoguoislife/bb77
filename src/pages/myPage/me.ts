@@ -23,28 +23,28 @@ export class MePage {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "perry.png",
-      desc: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet",
+      textStory: "Lorem ipsum dofghjkjhgfdfghjjhglor sit amet",
       type: "location",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "77",
       profilePicture: "mike.png",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "text",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "77",
       profilePicture: "max.png",
-      desc: "Lorem ipsum dolor sit amet.sdfghjkllhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      textStory: "Lorem ipsum dolor sit amet.sdfghjkllhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
       type: "video",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "adam.jpg",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "picture",
       privateOrNot: false
 
@@ -52,14 +52,14 @@ export class MePage {
       createdAt: new Date(),
       author: "77",
       profilePicture: "max.png",
-      desc: "Lorem ipsum dolor sit amet.sdfghjkllhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
+      textStory: "Lorem ipsum dolor sit amet.sdfghjkllhgfd,gfdfghj.kjhgfswertyujnbvcxsdfghjkmnbvcxserty,kkihg,hgfd.nbvcdtg,kjhgfert.",
       type: "video",
       privateOrNot: false
     }, {
       createdAt: new Date(),
       author: "bb",
       profilePicture: "adam.jpg",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      textStory: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       type: "picture",
       privateOrNot: false
 
