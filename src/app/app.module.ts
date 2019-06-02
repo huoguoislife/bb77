@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule, HttpClient } from '@angular/common/http'
 
+import { UnableToObtainInfo } from './components/CommonError/UnableToObtainInfo/UnableToObtainInfo';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http'
     CreatePage,
     MePage,
     HomePage,
-    TabsPage
+    TabsPage,
+    UnableToObtainInfo,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http'
     CreatePage,
     MePage,
     HomePage,
-    TabsPage
+    TabsPage,
+    UnableToObtainInfo,
+    SpinnerComponent
   ],
   providers: [
     StatusBar,
