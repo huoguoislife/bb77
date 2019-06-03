@@ -9,6 +9,8 @@ import { Feed } from '../../app/models/feed.model';
 export class MePage {
 
   feeds: Feed[];
+
+  //add msg to make conflict
   constructor(public navCtrl: NavController) {
     this.formFeed();
     console.log('Me page');
